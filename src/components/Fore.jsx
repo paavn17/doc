@@ -8,32 +8,59 @@ function Fore() {
 
     const ref = useRef(null)
 
-    const data = [
-        {
-            desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos.",
-            filesize: ".9mb",
-            close: true,
-            tag: {
-                isOpen: true, tagTitle:"Download Now", tagColor:"green",
-            }
-        },
-        {
-            desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro perferendis nemo commodi atque quis, repudiandae reiciendis blanditiis consequuntur in illum.",
-            filesize: ".7mb",
-            close: true,
-            tag: {
-                isOpen: false, tagTitle:"Download Now", tagColor:"green",
-            }
-        },
-        {
-            desc : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime explicabo commodi quisquam alias reprehenderit repudiandae.",
-            filesize: "1.2mb",
-            close: false,
-            tag: {
-                isOpen: true, tagTitle:"Download Now", tagColor:"green",
-            }
-        },
-    ]
+   const data = [
+  {
+    desc: "Grocery shopping list for the week – includes fruits, vegetables, and household essentials.",
+    filesize: "120KB",
+    close: true,
+    tag: {
+      isOpen: true,
+      tagTitle: "Open List",
+      tagColor: "green",
+    },
+  },
+  {
+    desc: "Wedding invitation PDF for printing and distribution to family and friends.",
+    filesize: "2.4MB",
+    close: false,
+    tag: {
+      isOpen: true,
+      tagTitle: "Download",
+      tagColor: "pink",
+    },
+  },
+  {
+    desc: "Daily workout plan - full body routine with timing and reps.",
+    filesize: "500KB",
+    close: true,
+    tag: {
+      isOpen: false,
+      tagTitle: "Start Workout",
+      tagColor: "orange",
+    },
+  },
+  {
+    desc: "Monthly electricity bill - needs to be paid before 10th.",
+    filesize: "300KB",
+    close: false,
+    tag: {
+      isOpen: true,
+      tagTitle: "Pay Now",
+      tagColor: "red",
+    },
+  },
+  {
+    desc: "Kids' school project - solar system poster in progress.",
+    filesize: "1.5MB",
+    close: true,
+    tag: {
+      isOpen: true,
+      tagTitle: "View Work",
+      tagColor: "blue",
+    },
+  },
+];
+
 
   return (
     <div ref={ref} className='fixed z-[3] left-0 top-0 w-full h-full flex gap-8 flex-wrap p-7 '>
